@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Travel India</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='same.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+
+
+
+  <nav>
+    <div class="title">
+      <h1>✈</h1>
+      <h1>Travel India</h1>
+      <p>Explore Tours</p>
+    </div>  
+    <div class="nav">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('projects') }}">Projects</a>
+      <a href="{{ url_for('trail') }}">Trails</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+    </div>
+  </nav>
+    <!-- ✅ Flash Messages -->
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div class="flash-wrap">
+        {% for category, message in messages %}
+          <div class="flash {{ category }}">{{ message }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+
+  <div class="mydiv"> 
+    <div class="content-wrapper">
+      <div class="text1">
+        <h1 style="color: red; text-align: center;">Contact Us</h1>
+        <p style="color: #ccc; text-align: center; margin-bottom: 20px;">
+          For tour enquiries or any questions, please use the form below and we will get back to you.
+        </p>
+        <form action="{{ url_for('contact') }}" method="POST">
+          <div class="form-group">
+            <div class="half">
+              <label>First Name *</label><br>
+              <input class="inp" type="text" name="first_name" placeholder="Enter First Name" required>
+            </div>
+            <div class="half">
+              <label>Last Name *</label><br>
+              <input class="inp" type="text" name="last_name" placeholder="Enter Last Name">
+            </div>
+          </div>
+
+          <label>Email *</label><br>
+          <input class="inp" type="email" name="email" placeholder="example@example.com" required><br>
+
+          <label>Subject</label><br>
+          <input class="inp" type="text" name="subject" placeholder="Subject"><br>
+
+          <label>Leave us a message... *</label><br>
+          <textarea class="mess" name="message" placeholder="Your message" required></textarea><br>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h1>✈</h1>
+        <h3>Travel India</h3>
+        <p>Explore Tours</p>
+      </div>
+
+      <div class="footer-links">
+        <ul>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('trail') }}">Trails</a></li>
+          <li><a href="{{ url_for('projects') }}">Projects</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+        <ul>
+           <li><a href=https://www.facebook.com/OfficialAndxGaming>Facebook</a></li>
+        <li><a href=https://www.instagram.com/_travel_india07>Instagram</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-btn">
+        <a href="{{ url_for('trail') }}" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 by Travel India. Powered and secured by <a href="https://github.com/Ajaykumar-02">AJ</a></p>
+      <a href="#" class="go-up">Go Up <i class="fa-solid fa-angle-up"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
