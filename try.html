@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Travel India</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: rgba(0, 0, 0, 0.527);
+    }
+
+    .mydiv {
+      min-height: 100vh;
+      width: 100%;
+      background-image: url(https://static.wixstatic.com/media/ea71bb_1a85f350b9b04bb3bc9eeac301158294~mv2.jpg/v1/fill/w_1891,h_833,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ea71bb_1a85f350b9b04bb3bc9eeac301158294~mv2.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-wrapper {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text1 {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 40px;
+      border-radius: 10px;
+      color: white;
+      width: 90%;
+      max-width: 700px;
+      text-align: left;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    }
+
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .form-group .half {
+      width: 48%;
+    }
+
+    .inp, .mess {
+      width: 100%;
+      height: 40px;
+      padding-left: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 15px;
+    }
+
+    .mess {
+      height: 100px;
+    }
+
+    button {
+      width: 100%;
+      height: 45px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: black;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+
+
+<nav>
+  <div class="title">
+    <h1>✈</h1>
+    <h1>Travel India</h1>
+    <p>Explore Tours</p>
+  </div>
+  <div class="nav">
+  <a href="{{ url_for('home') }}">Home</a>
+<a href="{{ url_for('about') }}">About</a>
+<a href="{{ url_for('projects') }}">Projects</a>
+<a href="{{ url_for('trail') }}">Trails</a>
+<a href="{{ url_for('contact') }}">Contact</a>
+
+  </div>
+</nav>
+
+<!-- Background Section with Centered Form -->
+<div class="mydiv">
+  <div class="content-wrapper">
+    <div class="text1">
+      <h1 style="color: red; text-align: center;">Contact Us</h1>
+      <p style="color: #ccc; text-align: center; margin-bottom: 20px;">
+        For tour enquiries or any questions, please use the form below and we will get back to you.
+      </p>
+
+      <form action="#">
+        <div class="form-group">
+          <div class="half">
+            <label>First Name *</label><br>
+            <input class="inp" type="text" placeholder="Enter First Name">
+          </div>
+          <div class="half">
+            <label>Last Name *</label><br>
+            <input class="inp" type="text" placeholder="Enter Last Name">
+          </div>
+        </div>
+
+        <label>Email *</label><br>
+        <input class="inp" type="email" placeholder="example@example.com"><br>
+
+        <label>Subject</label><br>
+        <input class="inp" type="text" placeholder="Subject"><br>
+
+        <label>Leave us a message... *</label><br>
+        <textarea class="mess" placeholder="Your message"></textarea><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer (Don't Touch) -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h1>✈</h1>
+      <h3>Travel India</h3>
+      <p>Explore Tours</p>
+    </div>
+
+    <div class="footer-links">
+      <ul>
+         <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('trail') }}">Trails</a></li>
+          <li><a href="{{ url_for('projects') }}">Projects</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+      <ul>
+       <li><a href=https://www.facebook.com/OfficialAndxGaming>Facebook</a></li>
+        <li><a href=https://www.instagram.com/_travel_india07>Instagram</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-btn">
+      <a href="{{ url_for('trail') }}" class="book-btn">Book Now</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 by Travel India. Powered and secured by <a href="https://github.com/Ajaykumar-02">AJ</a></p>
+    <a href="#" class="go-up">Go Up <i class="fa-solid fa-angle-up"></i></a>
+  </div>
+</footer>
+
+</body>z
+</html>
