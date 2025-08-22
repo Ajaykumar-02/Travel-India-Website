@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Thank You - Travel India</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='same.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+<style>
+.thank-you-container {
+ text-align: center;
+ padding: 100px 20px;
+}
+.thank-you-container h1 {
+color: #34c759;
+font-size: 3em;
+}
+.thank-you-container p {
+color: black;
+font-size: 1.2em;
+margin-top: 20px;
+text-decoration: none;
+}
+.thank-you-container button{
+    color: lightgreen;
+  
+    width: 80px;
+}
+body{
+    background-image: url(https://i.pinimg.com/originals/bb/dd/d2/bbddd2a49974ba760206b526563f2ff5.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+</style>
+</head>
+<body>
+
+
+<div class="thank-you-container">
+<h1>Thank You!</h1>
+<p>Your message has been submitted successfully.</p>
+<p>We will get back to you as soon as possible.</p><br>
+<a href="{{ url_for('home') }}"><button>Home</button></a>
+</div>
+
+</body>
+</html>
