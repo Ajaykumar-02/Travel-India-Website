@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  
+.Travel{
+    text-align:left;
+    font-size: 30px;
+    font-family:fantasy;
+    color:white;
+}
+.mydiv{
+    height: 80vh;
+    width: 100%;
+    background-image: url(https://www.adotrip.com/public/images/areas/master_images/60d0813807aff-Baga_Beach_In_Goa.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
+}
+.text1{
+    font-size: 30px;
+    color:white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 230px;
+    margin-left: 42%;
+    top:40%;
+    left: 40%;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.end{
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 30px;
+}
+body{
+    background-color: whitesmoke;
+}
+.text2{
+  padding:40px ;
+  text-align: center;
+  
+}
+.head{
+  padding: 30px;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.trip-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  background-color: white;
+}
+
+.trip-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.trip-card img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.trip-card h3 {
+  margin: 15px 0 10px;
+}
+
+.trip-card p {
+  color: #333;
+  font-size: 14px;
+}
+
+.trip-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.trip-card ul li {
+  margin: 5px 0;
+}
+
+.book-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+p:hover{
+  color:orangered;
+}
+.h:hover{
+  color: orange;
+}
+.l:hover{
+  color: green;
+}
+
+
+
+    </style>
+    <link rel="stylesheet" href="../static/same.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="mydiv">
+      
+<nav>
+   <div class="title">
+    <h1>✈<h1>
+    <h1>Travel India </h1>
+    <p class="ex">Explore Tours</p>
+    </div>
+       <div class="nav">
+   <a href="{{ url_for('home') }}">Home</a>
+<a href="{{ url_for('about') }}">About</a>
+<a href="{{ url_for('projects') }}">Projects</a>
+<a href="{{ url_for('trail') }}">Trails</a>
+<a href="{{ url_for('contact') }}">Contact</a>
+
+   
+</div>
+
+  </nav>
+    <div class="img">
+    <div class="text1">
+    <h1> Our Trails</h1><br><br>
+    </div>
+  </div>
+</div>
+<div class="text2">
+  <h1 class="h">It's Time to Start Your Adventures</h1>
+  <h2 style="color: red;">_________</h2><br>
+  <p class="l">Uncover the soul of India with journeys crafted just for you. From vibrant cities to tranquil villages, majestic mountains to golden beaches—your unforgettable Indian adventure begins now.</p>
+</div>
+
+<div class="trip-container">
+
+  <div class="trip-card">
+    <img src="https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2021/02/outdoor-image-03.jpg" alt="">
+    <h3>⚲ Backpacking Trips</h3>
+    <p>Experience India like never before—raw, real, and on a budget.</p>
+    <ul>
+      <li><h5>Offered Daily</h5></li>
+      <li><h5>5 hr</h5></li>
+      <li><h5>$80</h5></li>
+    </ul>
+    <a href="{{ url_for('contact') }}" class="book-btn">Book Now</a>
+  </div>
+
+  <div class="trip-card">
+    <img src="https://websitedemos.net/outdoor-adventure-02/wp-content/uploads/sites/351/2018/11/services-2.jpg" alt="">
+    <h3>⚲ Family Hiking Trips</h3>
+    <p>Create lasting memories with your loved ones on safe, scenic, and family-friendly hikes across India.</p>
+    <ul>
+      <li><h5>Offered Daily</h5></li>
+      <li><h5>8 hr</h5></li>
+      <li><h5>$120</h5></li>
+    </ul>
+    <a href="{{ url_for('contact') }}" class="book-btn">Book Now</a>
+  </div>
+
+  <div class="trip-card">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.V3c0ffsBoXtH_lYA8hHz1gHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    <h3>⚲ India’s Timeless Temples</h3>
+    <p>Step into the spiritual heart of India with temple tours that blend history, devotion, and architectural.</p>
+    <ul>
+      <li><h5>Offered Daily</h5></li>
+      <li><h5>12 hr</h5></li>
+      <li><h5>$180</h5></li>
+    </ul>
+   <a href="{{ url_for('contact') }}" class="book-btn">Book Now</a>
+  </div>
+
+  <div class="trip-card">
+    <img src="https://wallpaperaccess.com/full/1598244.jpg" alt="">
+    <h3>⚲ Royal Rajasthan Retreat</h3>
+    <p>Explore the deserts, forts, and royal palaces of Rajasthan with expert local guides.</p>
+    <ul>
+      <li><h5>Offered Daily</h5></li>
+      <li><h5>6 hr</h5></li>
+      <li><h5>$100</h5></li>
+    </ul>
+    <a href="{{ url_for('contact') }}" class="book-btn">Book Now</a>
+  </div>
+
+</div>
+
+
+
+  </div>
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+     <h1>✈<h1>
+      <h3>Travel India</h3>
+      <p>Explore Tours</p>
+    </div>
+
+    <div class="footer-links">
+      <ul>
+         <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('trail') }}">Trails</a></li>
+          <li><a href="{{ url_for('projects') }}">Projects</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+      <ul>
+         <li><a href=https://www.facebook.com/OfficialAndxGaming>Facebook</a></li>
+        <li><a href=https://www.instagram.com/_travel_india07>Instagram</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-btn">
+      <a href="{{ url_for('trail') }}" class="book-btn">Book Now</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 by Travel India. Powered and secured by <a href="https://github.com/Ajaykumar-02">AJ</a></p>
+    <a href="#" class="go-up">Go Up <i class="fa-solid fa-angle-up"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
