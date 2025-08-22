@@ -1,0 +1,132 @@
+
+
+
+.mydiv{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://th.bing.com/th/id/R.386b04ef43de20783cfd91c058341870?rik=eC4AokuPXgz7UA&riu=http%3a%2f%2fwonderfulengineering.com%2fwp-content%2fuploads%2f2015%2f04%2findia-wallpaper-20.jpg&ehk=cbeeKJXlEpi%2fPy4d9X1nT%2bo2XVAvZurRmos4SuHrmfs%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
+}
+.text1{
+    color:white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 230px;
+    margin-left: 35%;
+    top:40%;
+    left: 40%;
+    display: inline-block;
+}
+
+.head{
+    background-color: gray;
+    text-align: center;
+    height: 100px;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.head:hover{
+    color: yellow;
+}
+.end{
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 100px;
+    height: 60vh;
+}
+body{
+    background-color: whitesmoke;
+}
+.head2 p {
+    color: #FF9933;
+    font-size:xx-large;
+    text-align: center;
+    
+}
+.head2 h1{
+    text-align: center;
+}
+.head2{
+    padding: 30px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text img:hover{
+
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+.img3{
+    background-image: url(https://mediaim.expedia.com/destination/1/2d75301e5fa5840846672492693f1fb3.jpg);
+    height: 80vh;
+    width: 100%;
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.text3 {
+   text-align:justify;
+   color: #FFFFFF;
+   padding: 20px;
+  
+}
+.text3:hover{
+    color: black;
+}
+
+.text4{
+    padding-left: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text4 p:hover{
+    color: green;
+}
+.text4 img:hover{
+    
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.lines h3:hover{
+    color: orange;
+}
+.lines p:hover{
+    color: #138808;
+}
+.im {
+   display: flex;          
+  justify-content: center; 
+  gap: 20px;               
+  flex-wrap: wrap;        
+  padding: 20px;
+}
+.im h3:hover{
+    color: #FF9933;
+}
+.booka{
+    background-color: red;
+}
+.booka:hover{
+    color: #FFFFFF;
+    background-color: red;
+}
+.text1 h1:hover{
+    color: #FF9933;
+}
+.text1 p:hover{
+    color:lightgreen;
+}
+        
+

@@ -1,0 +1,119 @@
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav a, .login {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  .title h1 {
+    font-size: 24px;
+  }
+
+  .text1 {
+    margin-left: 0;
+    margin-top: 150px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .text1 h1 {
+    font-size: 24px;
+  }
+
+  .text1 p {
+    font-size: 16px;
+  }
+
+  .img3 {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .text3 {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .text4 {
+    padding: 15px;
+  }
+
+  .im {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .img-box {
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-links li {
+    margin: 5px 0;
+  }
+
+  .booka, .book-btn {
+    width: 80%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text,
+  .head2,
+  .text4,
+  .text3 {
+    text-align: center;
+  }
+
+  .mydiv {
+    background-attachment: scroll;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+  nav {
+    position: static !important; /* Remove fixed nav on mobile */
+  }
+
+  body {
+    padding-top: 0 !important; /* Remove extra padding on mobile */
+  }
+}
+
+}
